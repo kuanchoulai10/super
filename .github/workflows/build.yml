@@ -1,7 +1,9 @@
 name: Testt
 
 on:
-  push
+  push:
+    paths:
+      - sub/docs/
 
 jobs:
     build:
