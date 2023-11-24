@@ -1,0 +1,22 @@
+name: Testt
+
+on:
+  push
+
+jobs:
+    build:
+      name: Build Documentations
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+          with:
+            submodules: true
+        - name: List all
+          run: "ls -la"
+        - name: List
+          run: |
+            ls ${{github.workspace}}
+        - name: List all sub
+          run: "ls -la sub/"
+
