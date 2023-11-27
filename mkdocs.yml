@@ -2,7 +2,6 @@ site_name: Cats API
 
 nav:
   - Home: 'index.md'
-  - Authentication: 'authentication.md'
   - API:
     - v1: '!include ./sub/mkdocs.yml'
 
